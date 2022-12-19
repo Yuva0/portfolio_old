@@ -1,0 +1,1087 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: red;
+    background: yellow;
+}
+  
+::selection {
+    color: #FFEB54;
+    background-color: #219ebc;
+}
+::-moz-selection {
+    color: #FFEB54;
+    background-color: #219ebc;
+}
+::-webkit-selection {
+    color: #FFEB54;
+    background-color: #219ebc;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.8)
+}
+
+h6{
+    display: inline;
+    font-weight: normal;
+}
+
+:root {
+    --font-color: #ffffff;
+    --background: #222C32;
+    --theme: #e76f51;
+    --navigation_size:24px;
+    --main_heading_size: 72px;
+    --heading_size: 28px;
+    --description_size: 18px;
+    --skill-icon_size:150px;
+}
+
+body{
+    width: fit-content;
+    height:auto;
+    padding: 0;
+    margin: 0;
+    background-color: var(--background);
+    color:var(--font-color);
+}
+
+ul, ol{
+    padding:0px;
+    margin:0px;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color:inherit;
+}
+
+a:active{
+    color:var(--theme);
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:stretch;
+    width:100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--description_size);
+}
+
+/* Navigation Bar */
+#navbar{
+    /* min-width:80px; */
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    width: 70px;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--theme);
+    font-size: var(--navigation_size);
+    border-right: 1px solid var(--theme);
+    /* background-color: #192125 ; */
+    z-index: 1;
+}
+
+#main-category{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+#main-category li{
+    margin-top: 16px;
+}
+
+#sub-category{
+    margin-bottom: 32px;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sub-category li{
+    margin-top:32px;
+    color:white;
+}
+
+.active{
+    color: var(--theme);
+}
+
+/* Content Page */
+
+#content{
+    flex-grow:1;
+    display:flex;
+    flex-direction: column;
+    margin-left:70px;
+}
+
+.page:last-child{
+    box-sizing: border-box;
+    padding-bottom: 48px;
+}
+
+
+#page1{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-height:100vh;
+}
+
+#photo{
+    min-width: 35%;
+}
+
+#img_photo{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#intro{
+    flex-grow: 1;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#intro-title_description{
+    display: flex;
+}
+
+.main_heading{
+    font-family: 'Assistant', sans-serif;
+    font-size: var(--main_heading_size);
+    display: flex;
+    justify-content: center;
+    margin-top:72px;
+    border-bottom: 1px solid white;
+}
+
+#main_heading_span{
+    border-bottom: 1px solid white;
+}
+
+#intro-main_title{
+    margin-top:16px;
+    border-bottom: 0px;
+}
+
+.font_color{
+    color: var(--theme);
+}
+
+.centerized_span{
+    text-align: center;
+}
+
+.cool_underline{
+    border-bottom: 5px solid var(--theme);
+    display: inline-block;
+}
+
+.heading{
+    font-family: 'Assistant', sans-serif;
+    font-size:var(--heading_size);
+    margin-top: 32px;
+}
+
+.description{
+    margin-top: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--description_size);
+}
+
+#intro-skill-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    align-items: center;
+    height: auto;
+    flex-grow: 1;
+    margin-bottom: 32px;
+}
+
+.hover_bgcolor{
+    background-color: #1F282D;
+}
+
+.intro-skill-box{
+    width: 33%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.intro-skill-box:hover{
+    cursor: pointer;
+    /* background-color: #1F282D; */
+}
+
+.rotateOnY{
+    animation: rotateOnY 0.5s linear forwards;
+}
+
+@keyframes rotateOnY {
+    0%{
+        transform: rotateY(0deg);
+       }
+    100%{
+        transform: rotateY(90deg);
+    }
+}
+
+.rotateBackwardsOnY{
+    animation: rotateBackwardsOnY 0.5s linear forwards;
+}
+
+@keyframes rotateBackwardsOnY {
+    0%{
+        transform: rotateY(-90deg);
+       }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+
+.hidden_class{
+    display: none !important;
+}
+
+.intro-skill-title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-skill-img img{
+    width: var(--skill-icon_size);
+    height: var(--skill-icon_size);;
+}
+
+/* Page 2 */
+#page2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1F282D;
+}
+
+.timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 16px;
+    width: 1080px;
+    max-width: 90%;
+    background-color: var(--background);/*#2B343A;*/
+    position: relative;
+}
+
+.timeline-row-bottom{
+    margin-bottom: 72px;
+}
+
+.timeline-heading{
+    width: 1080px;
+    max-width: 90%;
+    margin-top:48px;
+}
+
+.timeline-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 72px;
+}
+
+#educational-timeline{
+    margin-bottom: 108px;
+}
+
+.timeline-item{
+    width: 38%;
+    background-color: #2B343A; /* #333C42;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:stretch;
+}
+
+.timeline-item div,ul{
+    margin-left:21px;
+    margin-right:21px;
+}
+
+.timeline-item-position{
+    margin-top:24px;
+}
+
+.timeline-location{
+    margin-top:8px;
+    background-color: var(--background);
+    font-size: 14px;
+    padding:4px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    color:rgba(255, 255, 255, 0.8);
+}
+
+.timeline-description{
+    margin-top:10px;
+    color:rgba(255, 255, 255, 0.8);
+    list-style-type: disc;
+    font-size: 15px;
+    padding-left: 8px;
+}
+
+.timeline-mini-description{
+    margin-top:16px !important;
+}
+
+.timeline-description li{
+    margin-top:8px;
+}
+
+#timeline-tenth{
+    margin-bottom: 24px;
+}
+
+.timeline-skills{
+    color:rgba(255, 255, 255, 0.8);
+    margin-top:16px;    
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.timeline-skills li{
+    flex:1;
+    text-align: center;
+    background-color: #40484D;
+    padding-left:8px;
+    padding-right: 8px;
+    padding-top:1px;
+    padding-bottom: 1px;
+    margin-top:8px;
+    margin-left: 8px;
+}
+
+.timeline-item-visible{
+    display: flex!important;
+}
+
+.timeline-item-invisible{
+    display: none!important;
+}
+
+.timeline-circle{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-item-circle{
+    background-color: var(--theme);
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.timeline-blank{
+    width: 38%;
+    background-color: transparent;
+}
+
+.time-line{
+    position: absolute;
+    left:50%;
+    background-color: var(--theme);
+    height: 100%;
+}
+
+/* Page 3 */
+
+#page3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#certificate-content{
+    width:1080px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.certificate-main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width:350px;
+    max-width: 90%;
+}
+
+.certificate-img{
+    width:200px;
+    /* height: 400px; */
+}
+
+.certificate-img img{
+    width:100%;
+    height: auto;
+}
+
+
+/* Page 4 */
+#page4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1F282D;
+    padding-bottom:108px;
+}
+
+#contact-body{
+    margin-top: 48px;
+    width:1080px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 72px;
+}
+
+#contact-yourDetails{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    font-size: 24px;
+    align-items: center;
+}
+
+.contact-details{
+    margin-top: 16px;
+}
+
+.contact-details input,textarea,button{
+    width: 100%;
+    /*height: 100%; */
+    border-radius: 5px;
+    background-color: var(--background);
+    color: rgba(255, 255, 255, 0.8);
+    border:1px solid white;
+    padding:6px 12px;
+    box-sizing: border-box;
+}
+
+.contact-details button{
+    background-color: var(--theme);
+    border: none;
+    cursor: pointer;
+}
+
+#contact-inputs{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    padding-left:48px;
+    padding-right:48px;
+}
+
+#contact-yourDetails{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-location_mail{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 32px;
+    margin-left: 64px;
+}
+
+#contact-socials{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size:48px;
+    margin-top:32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top:1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+#contact-socials li{
+    margin-left:24px;
+    margin-right:24px;
+}
+
+/* Width stays fixed -> Height Keeps changing*/
+
+/* Width - unlimited */
+@media (max-device-height:900px){ 
+    /*Only decrease icon size since height is same*/
+    :root{
+        --skill-icon_size:120px;
+        --navigation_size:21px;
+    }
+}
+
+@media (max-device-height:820px){ 
+    /*Only decrease icon size since height is same*/
+    :root{
+        --skill-icon_size:100px;
+    }
+    /* The image has completely expanded so it's not going smaller any further. Reduce min-width */
+    #photo{
+        min-width: 28%;
+    }
+    #main-category{
+        letter-spacing: -2px;
+    }
+}
+
+@media (max-device-height:770px){ 
+    /* The image has completely expanded so it's not going smaller any further. Reduce min-width */
+    #photo{
+        min-width: 20%;
+    }
+
+    /* Put all icons in one line */
+    .intro-skill-box{
+        width: 16.66%;
+        height: 100%;
+    }
+}
+
+@media (max-device-height:540px){
+    #img_photo{
+        width:100%;
+        height: auto;
+    }
+}
+
+/* Width: 1700px */
+@media (max-device-width:1700px) and (max-device-height:770px){ /*Very Large Size -> when there are no changes in height but width reduces*/
+    #photo{
+        min-width: 30%;
+    }
+}
+
+/* Width: 1250px */
+@media (max-device-width:1250px){
+    .timeline-item{
+        width: 40%;
+    }
+
+    .timeline-blank{
+        width: 40%;
+    }
+
+    .certificate-main{
+        width: 300px;
+    }
+
+}
+
+
+/* Width: 1200px */
+@media (max-device-width:1200px){ /*Very Large Size -> when there are no changes in height but width reduces*/
+    /*Only decrease icon size since height is same*/
+    :root{
+        --skill-icon_size:120px;
+    }
+
+    .timeline{
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .timeline-heading{
+        width: 90%;
+        max-width: 100%;
+    }
+    #certificate-content{
+        width:90%;
+    }
+    
+    .certificate-section{
+        margin-top:0px;
+    }
+
+    .certificate-main{
+        margin-top:48px;
+    }
+
+    #page4{
+        width: 100%;
+    }
+
+    #contact-body{
+        width: 90%;
+    }
+}
+
+@media (max-device-width:1200px) and (max-device-height:900px){
+    :root{
+        --skill-icon_size:90px;
+    }
+}
+
+/* Width: 1100px */
+@media (max-device-width:1100px){/*Large Height, Large Width -> width has grown smaller*/
+    /*put navbar on top*/
+    #main{
+        flex-direction: column;
+    }
+    /*navbar become full width*/
+    #navbar{
+        height:60px;
+        width:100vw;
+        flex-direction: row;
+        background-color: var(--background);
+        border-bottom: 2px solid var(--theme);
+    }
+    /* Main Category */
+    #main-category{
+        margin-top:0px;
+        margin-left:16px;
+        writing-mode: horizontal-tb;
+        text-orientation: mixed;
+        letter-spacing: 8px; 
+    }
+
+    #main-category li{
+        margin-top:0px;
+        margin-left:16px;
+    }
+
+    /* Sub Category*/
+    #sub-category{
+        flex-direction: row;
+        margin-bottom: 0px;
+        margin-right:16px;
+
+    }
+
+    #sub-category li{
+        margin-top:0px;
+        margin-right:32px;
+    }
+
+    /* content div gets full margin */
+    #content{
+        margin-left:0px;
+    }
+
+    /* #page1{
+        min-height:calc(100vh - 60px);
+    } */
+
+    
+    #page1{
+        padding-top: 60px;
+        min-height:calc(80vh - 60px);
+    }
+
+    .timeline-item-invisible{
+        display: flex!important;
+    }
+
+    .timeline-item-visible{
+        display: none!important;
+    }
+
+    .timeline{
+        align-items: flex-start;
+    }
+
+    .timeline-row{
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .timeline-item{
+        width: 85%;
+    }
+
+    .time-line{
+        left:5%;
+    }
+    #contact-yourDetails{
+        font-size:21px;
+    }
+}
+
+@media (max-device-width:1100px) and (max-device-height:1100px){
+    #page1{
+        min-height:calc(100vh - 60px);
+    }
+}
+
+@media (max-device-width:1100px) and (max-device-height:800px){
+    /*Only decrease icon size since height is same*/
+    :root{
+        --skill-icon_size:75px;
+    }
+    /* Order rechanges to 3 icons in one column */
+    .intro-skill-box{
+        width: 33%;
+        height: 50%;
+    }
+
+}
+
+@media (max-device-width:1100px) and (max-device-height:700px){
+    /*Only decrease icon size since height is same*/
+    :root{
+        --main_heading_size: 48px;
+        --heading_size: 24px;
+        --description_size: 18px;
+    }
+
+    .main_heading{
+        margin-top:64px;
+    }
+}
+
+@media (max-device-width:1100px) and (max-device-height:600px){
+    .intro-skill-box{
+        width: 16.66%;
+        height: 100%;
+    }
+}
+
+/* Width: 950px */
+@media (max-device-width:950px){/*Large Height, Mediocre Width -> width has grown smaller*/
+    /*reduce even further icon size and also reduce font size*/
+    :root{
+        --skill-icon_size:100px;
+        --main_heading_size: 64px;
+        --heading_size: 24px;
+        --description_size: 16px;
+    }
+    /*reduce margin*/
+    .main_heading:not(:first-child){
+        margin-top: 72px;
+    }
+    /* Since Height is big -> Switch icons */
+    .intro-skill-box{
+        width: 50%;
+        height: 33%;
+    }
+
+    .timeline-item-circle{
+        width:40px;
+        height:40px;
+    }
+}
+
+/* Width: 900px */
+@media (max-device-width:900px){/*Large Height, Small Width -> Width is extremely small*/
+    /* Reduce height of page1 */
+    #page1{
+        min-height:calc(90vh - 60px);
+    }
+    /* Reduce icon size a bit */
+    :root{
+        --skill-icon_size:80px;
+    }
+    #contact-inputs{
+        width:80%;
+    }
+    #contact-yourDetails{
+        width:80%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-device-width:900px) and (max-device-height:900px){ /*Mediocre Width, Mediocre Height*/
+    /*Only decrease icon size since height is same*/
+    :root{
+        --skill-icon_size:80px;
+    }
+}
+
+
+@media (max-device-width:900px) and (max-device-height:850px){ /*Mediocre Width, Mediocre Height*/
+    /*Only decrease icon size since height is same*/
+    :root{
+        --skill-icon_size:75px;
+    }
+}
+
+@media (max-device-width:900px) and (max-device-height:730px){ /*Mediocre Width, Small Height*/
+    /* Reduce Margins */
+    .main_heading:not(:first-child){
+        margin-top: 64px;
+    }
+    
+    .heading{
+        margin-top: 16px;
+    }
+
+    .description{
+        margin-top: 18px;
+    }
+    /* Reduce size of fonts */
+    :root {
+        --main_heading_size: 48px;
+        --heading_size: 24px;
+        --description_size: 16px;
+    }
+}
+
+@media (max-device-width:900px) and (max-device-height:630px){ /*Mediocre Width, Very Small Height*/
+    .intro-skill-box{
+        margin-top:8px;
+    }
+    /* Reduce size of fonts */
+    :root {
+        --skill-icon_size:50px;
+        --main_heading_size: 32px;
+        --heading_size: 18px;
+    }
+}
+
+@media (max-device-width:900px) and (max-device-height:540px){ /*Mediocre Width, Very Small Height*/
+    .intro-skill-box{
+        width: 16.66%;
+        height: 100%;
+    }
+}
+
+
+/* Width: 800px */
+@media (max-device-width:800px) and (max-device-height:1000px){/*Large Height, Mini Width -> Width is extremely small*/
+    /* Reduce height of page1 */
+    #page1{
+        min-height:calc(80vh - 60px);
+    }
+    /* Little padding on margin side */
+    .intro-skill-box{
+        margin-top:4px;
+    }
+    /* Reduce font-size */
+    :root{
+        --main_heading_size: 42px;
+        --heading_size: 21px;
+        --description_size: 16px;
+    }
+    /* Reduce padding */
+    .main_heading{
+        margin-top: 64px;
+    }
+    .heading{
+        margin-top:18px;
+    }
+    .description{
+        margin-top:8px;
+    }
+}
+
+/* Width: 700px */
+@media (max-device-width:700px) and (max-device-height:1000px){/*Large Height, Extreme Mini Width -> Width is extremely small*/
+    /* Whatever is height of intro is taken */
+    #page1{
+        min-height:auto;
+    }
+}
+
+/* Width: 650px */
+@media (max-device-width:650px) and (max-device-height:1000px){/*Large Height, Very Extreme Mini Width -> Width is extremely small*/
+    /* Switch page1 to column */
+    #page1{
+        flex-direction: column;
+    }
+    #photo{
+        min-width: 100vw;
+    }
+    #img_photo{
+        width:100%;
+        height:auto;
+    }
+    /* Go back to bigger fonts */
+    :root {
+        --skill-icon_size:100px;
+        --main_heading_size: 64px;
+        --heading_size: 24px;
+        --description_size: 16px;
+        --navigation_size:21px;
+    }
+    /* reincrease margin */
+    .main_heading{
+        margin-top: 64px;
+    }
+    
+    .heading{
+        margin-top: 32px;
+    }
+
+    .description{
+        margin-top: 18px;
+    }
+
+    .intro-skill-box{
+        margin-top:48px;
+    }
+
+    /* Navigation Icon size*/
+    #sub-category{
+        font-size:24px;
+    }
+    .timeline-item-circle{
+        width: 30px;
+        height: 30px;;
+    }
+    #contact-socials{
+        font-size: 36px;
+    }
+}
+
+
+/* Width: 500px */
+@media (max-device-width:500px) and (max-device-height:1000px){/*Large Height, Very Very Extreme Mini Width -> Width is extremely small*/
+    /* Reduce size of heading */
+    :root {
+        --main_heading_size: 54px;
+    }
+
+    /* Navigation */
+    #sub-category li{
+        margin-right:16px;
+    }
+
+    #main-category{
+        letter-spacing: 4px;
+    }
+    .timeline{
+        width: 100%;
+    }
+    #contact-socials{
+        font-size: 32px;
+    }
+}
+
+/* Width: 440px */
+@media (max-device-width:440px){
+    #contact-yourDetails{
+        font-size:18px;
+    }
+}
+
+@media (max-device-width:440px) and (max-device-height:1000px){/*Large Height, Very Very Extreme Mini Width -> Width is extremely small*/
+    #main-category{
+        letter-spacing: 2px;
+        margin-left:4px;
+    }
+
+    #main-category li{
+        margin-left:8px;
+    }
+
+    #sub-category{
+        margin-right:4px;
+    }
+
+    .timeline-item-circle{
+        width: 20px;
+        height: 20px;;
+    }
+
+}
+
+@media (max-device-width:360px){
+    #contact-yourDetails{
+        font-size:16px;
+    }
+    #contact-socials li{
+        margin-left:8px;
+        margin-right: 8px;
+    }
+}
+
+/* Width: 320px */
+@media (max-device-width:320px) and (max-device-height:1000px){/*Large Height, Very Very Extreme Mini Width -> Width is extremely small*/
+    /* Reduce size of heading */
+    :root {
+        --main_heading_size: 42px;
+    }
+    /* Switch icons to one at a time */
+    .intro-skill-box{
+        width: 100%;
+        height: 16.66%;
+    }
+    /* reduce icon size */
+    :root{
+        --skill-icon_size:80px;
+    }
+    #main-category{
+        letter-spacing: 0px;
+    }
+}

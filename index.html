@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <title>Tanuj Sengupta</title>
+        <link rel="stylesheet" href="index.css"/>
+        <script src="https://kit.fontawesome.com/8ef36467ca.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="index.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Oswald:wght@300;400;500&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500;600&display=swap');
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="navbar">
+                <ul id="main-category">
+                    <li >Resume</li>
+                </ul>
+                <ul id="sub-category">
+                    <li><a id="anchorpage1" data-scroll="page1" class="nav-anchor active" href="#page1"><i class="fas fa-user-alt"></i></a></li>
+                    <li><a id="anchorpage2" data-scroll="page2" class="nav-anchor" href="#page2"><i class="fas fa-sort-amount-up"></i></a></li>
+                    <li><a id="anchorpage3" data-scroll="page3" class="nav-anchor" href="#page3"><i class="fas fa-award"></i></a></li>
+                    <li><a id="anchorpage4" data-scroll="page4" class="nav-anchor" href="#page4"><i class="far fa-address-book"></i></a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <div id="page1" class="page">
+                    <div id="photo"><img id="img_photo" alt="Profile Photo" src="Photos/profile.jpeg"/></div>
+                    <div id="intro">
+                        <div id="intro-main_title" class="main_heading"><span id="main_heading_span" class="centerized_span">Introduction<span class="font_color">.</span></span></div>
+                        <div id="intro-title" class="heading"><span class="cool_underline">PR</span>OFILE</div>
+                        <div id="intro-title_description" class="description">A Web Developer with a passion for creating minimalistic clean websites with a good design and aesthetic appeal. I focus on 
+                            creating websites which are simple and can easily capture the user's attention. Currently I am focused on creating webapps for SAP Labs Bangalore using OpenUI5 and S/4 HANA.
+                        </div>
+                        <div id="intro-skill-title" class="heading"><span class="cool_underline">SK</span>ILLS <h6>(click icon to see proficiency)</h6></div>
+                        <div id="intro-skill-container">
+                            <div class="intro-skill-box">
+                                <div class="intro-skill-title intro-skill-default">
+                                    <div class="intro-skill-img"><img alt="Javascript" src="Photos/javascript.png"/></div>
+                                    <span>Javascript</span>
+                                </div>
+                                <div class="intro-skill-experience hidden_class">
+                                    <div class="intro-skill-img"><img alt="75%" src="Photos/75percent.png"/></div>
+                                    <span>Javascript</span>
+                                </div>
+                            </div>
+                            <div class="intro-skill-box">
+                                <div class="intro-skill-title intro-skill-default">
+                                    <div class="intro-skill-img"><img alt="HTML5" src="Photos/html5.png"/></div>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="intro-skill-experience hidden_class">
+                                    <div class="intro-skill-img"><img alt="80%" src="Photos/80percent.png"/></div>
+                                    <span>HTML5</span>
+                                </div>
+                            </div>
+                            <div class="intro-skill-box">
+                                <div class="intro-skill-title  intro-skill-default">
+                                    <div class="intro-skill-img"><img alt="CSS" src="Photos/css.png"/></div>
+                                    <span>CSS</span>
+                                </div>
+                                <div class="intro-skill-experience hidden_class">
+                                    <div class="intro-skill-img"><img alt="80%" src="Photos/80percent.png"/></div>
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                            <div class="intro-skill-box">
+                                <div class="intro-skill-title  intro-skill-default">
+                                    <div class="intro-skill-img"><img alt="React" src="Photos/react.png"/></div>
+                                    <span>React.JS</span>
+                                </div>
+                                <div class="intro-skill-experience hidden_class">
+                                    <div class="intro-skill-img"><img alt="80%" src="Photos/80percent.png"/></div>
+                                    <span>React</span>
+                                </div>
+                            </div>
+                            <div class="intro-skill-box">
+                                <div class="intro-skill-title intro-skill-default">
+                                    <div class="intro-skill-img"><img alt="OpenUI5" src="Photos/openui5.svg"/></div>
+                                    <span>OpenUI5</span>
+                                </div>
+                                <div class="intro-skill-experience hidden_class">
+                                    <div class="intro-skill-img"><img alt="50%" src="Photos/50percent.png"/></div>
+                                    <span>OpenUI5</span>
+                                </div>
+                            </div>
+                            <div class="intro-skill-box">
+                                <div class="intro-skill-title intro-skill-default">
+                                    <div class="intro-skill-img"><img alt="Node.js" src="Photos/node.png"/></div>
+                                    <span>Node.JS</span>
+                                </div>
+                                <div class="intro-skill-experience hidden_class">
+                                    <div class="intro-skill-img"><img alt="60%" src="Photos/50percent.png"/></div>
+                                    <span>Node</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="page2" class="page">
+                    <div class="main_heading"><span class="centerized_span">Timeline<span class="font_color">.</span></span></div>
+                    <div class="heading timeline-heading"><span class="cool_underline">PR</span>OFESSIONAL</div>
+                    <div class="timeline">
+                        <div class="timeline-row timeline-row-left">
+                            <div class="timeline-circle timeline-item-invisible"><div class="timeline-item-circle"></div></div>
+                            <div class="timeline-item">
+                                <div class="timeline-item-position">Associate Software Developer</div>
+                                <div class="timeline-location">
+                                    <span>&nbsp;<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;SAP Labs, India</span>
+                                    <span><i class="far fa-calendar"></i>&nbsp;&nbsp;Jan 2020 - Present&nbsp;&nbsp;</span>
+                                </div>
+                                <ul class="timeline-description">
+                                    <li>Started working as an intern and then got selected for full time role</li> 
+                                    <li>My main focus is in creating web applications
+                                    using OpenUI5 and S/4 HANA</li>
+                                    <li>Also responsible for testing of APIs using JMeter and Postman</li>
+                                </ul>
+                                <ul class="timeline-skills">
+                                    <li>OpenUI5</li>
+                                    <li>Javascript</li>
+                                    <li>JMeter</li>
+                                    <li>Postman</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-circle timeline-item-visible"><div class="timeline-item-circle timeline-item-visible"></div></div>
+                            <div class="timeline-blank timeline-item-visible"></div>
+                        </div>
+                        <div class="timeline-row timeline-row-right">
+                            <div class="timeline-blank timeline-item-visible"></div>
+                            <div class="timeline-circle"><div class="timeline-item-circle"></div></div>
+                            <div class="timeline-item">
+                                <div class="timeline-item-position">Project Intern</div>
+                                <div class="timeline-location">
+                                    <span>&nbsp;<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Wipro Limited</span>
+                                    <span><i class="far fa-calendar"></i>&nbsp;&nbsp;May 2019 - Jul 2019&nbsp;&nbsp;</span>
+                                </div>
+                                <ul class="timeline-description">
+                                    <li>Worked on Web Testing using Selenium WebDriver</li>
+                                    <li>Used Eclipse IDE to work in Selenium</li>
+                                    <li>Studied about Agile and Waterfall technology</li> 
+                                </ul>
+                                <ul class="timeline-skills">
+                                    <li>Selenium</li>
+                                    <li>Agile</li>
+                                    <li>Waterfall</li>
+                                    <li>Eclipse</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-row timeline-row-left">
+                            <div class="timeline-circle timeline-item-invisible"><div class="timeline-item-circle"></div></div>
+                            <div class="timeline-item">
+                                <div class="timeline-item-position">Web Developer Intern</div>
+                                <div class="timeline-location">
+                                    <span>&nbsp;<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Larsen & Toubro</span>
+                                    <span><i class="far fa-calendar"></i>&nbsp;&nbsp;May 2018 - Jun 2018&nbsp;&nbsp;</span>
+                                </div>
+                                <ul class="timeline-description">
+                                    <li>Worked on creating a Sharepoint website</li>
+                                    <li>Front-end was created using ASP.NET and Javascript</li>
+                                    <li>Back-end was developed using C#</li>
+                                    <li>SQL was used to access the database</li>
+                                    <li>Worked on automatically generating an SSRS report when the user clicked on Export</li>
+                                </ul>
+                                <ul class="timeline-skills">
+                                    <li>ASP.NET</li>
+                                    <li>Javascript</li>
+                                    <li>Sharepoint</li>
+                                    <li>SQL</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-circle timeline-item-visible"><div class="timeline-item-circle timeline-item-visible"></div></div>
+                            <div class="timeline-blank timeline-item-visible"></div>
+                        </div>
+                        <div class="timeline-row timeline-row-right timeline-row-bottom">
+                            <div class="timeline-blank timeline-item-visible"></div>
+                            <div class="timeline-circle"><div class="timeline-item-circle"></div></div>
+                            <div class="timeline-item">
+                                <div class="timeline-item-position">App Developer Intern</div>
+                                <div class="timeline-location">
+                                    <span>&nbsp;<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Webloom Solutions</span>
+                                    <span><i class="far fa-calendar"></i>&nbsp;&nbsp;May 2017 - Jul 2017&nbsp;&nbsp;</span>
+                                </div>
+                                <ul class="timeline-description">
+                                    <li>Worked on the codebase for an app called Leuk</li>
+                                    <li>Got hands-on experience on Android Studio </li>
+                                    <li>Worked on creating different components for the app like TextView, ImageButton, Toast and RadioButton</li> 
+                                </ul>
+                                <ul class="timeline-skills">
+                                    <li>Android Studio</li>
+                                    <li>Toast</li>
+                                    <li>RadioButton</li>
+                                    <li>TextView</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="time-line">&nbsp;</div>
+                    </div>
+                    <div class="heading timeline-heading"><span class="cool_underline">ED</span>UCATIONAL
+                    </div>
+                    <div id="educational-timeline" class="timeline">
+                        <div class="time-line">&nbsp;</div>
+                        <div class="timeline-row timeline-row-left timeline-row-top">
+                            <div class="timeline-circle timeline-item-invisible"><div class="timeline-item-circle"></div></div>
+                            <div class="timeline-item">
+                                <div class="timeline-item-position">B.Tech (Computer Science)</div>
+                                <div class="timeline-location">
+                                    <span>&nbsp;<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Manipal University</span>
+                                    <span><i class="far fa-calendar"></i>&nbsp;&nbsp;Apr 2016 - Apr 2020&nbsp;&nbsp;</span>
+                                </div>
+                                <ul class="timeline-description">
+                                    <li class="timeline-mini-description">1st Year: Programming Languages</li> 
+                                    <ul >
+                                        <li>Learnt C, C++ and Java</li>
+                                        <li>Learnt basics of Python through HackerRank</li>
+                                        <li>GPA: 9.1</li>
+                                    </ul>
+                                    <li class="timeline-mini-description">2nd Year: App Development</li>
+                                    <ul>
+                                        <li>Dived into Android Studio to understand how to create apps</li>
+                                        <li>Learnt PHP and MySQL using Coursera</li>
+                                        <li>GPA: 8.7</li>
+                                    </ul>
+                                    <li class="timeline-mini-description">3rd Year: Machine Learning</li>
+                                        <ul>
+                                            <li>Learnt about Deep Learning, Artificial Neural Networks and Logistic Regression</li>
+                                            <li>Implemented it using Jupyter Notebooks and R</li>
+                                            <li>GPA:8.2</li>
+                                        </ul>
+                                    <li class="timeline-mini-description">4th Year: Web Development
+                                        <ul>
+                                            <li>Learnt about PHP, Javascript and MySQL</li>
+                                            <li>Increased my proficiency in basic languages like HTML5 and CSS</li>
+                                            <li>GPA: 8.6</li>
+                                        </ul>
+                                    </li>
+                                    <li>CGPA: 8.6</li>
+                                </ul>
+                                <ul class="timeline-skills">
+                                    <li>Javascript</li>
+                                    <li>PHP</li>
+                                    <li>Android Studio</li>
+                                    <li>MySQL</li>
+                                    <li>C</li>
+                                    <li>C#</li>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>Deep Learning</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-circle timeline-item-visible"><div class="timeline-item-circle timeline-item-visible"></div></div>
+                            <div class="timeline-blank timeline-item-visible"></div>
+                        </div>
+                        <div class="timeline-row timeline-row-right">
+                            <div class="timeline-blank timeline-item-visible"></div>
+                            <div class="timeline-circle"><div class="timeline-item-circle"></div></div>
+                            <div class="timeline-item">
+                                <div class="timeline-item-position">HSC (XI and XII)</div>
+                                <div class="timeline-location">
+                                    <span>&nbsp;<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Thakur Viyda Mandir</span>
+                                    <span><i class="far fa-calendar"></i>&nbsp;&nbsp;May 2019 - Jul 2019&nbsp;&nbsp;</span>
+                                </div>
+                                <ul class="timeline-description">
+                                    <li>Learnt basics of HTML and CSS</li>
+                                    <li>Marks: 87.54%</li>
+                                    <li>Qualified for JEE Advance</li>
+                                </ul>
+                                <ul class="timeline-skills">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-row timeline-row-left timeline-row-bottom">
+                            <div class="timeline-circle timeline-item-invisible"><div class="timeline-item-circle"></div></div>
+                            <div class="timeline-item">
+                                <div class="timeline-item-position">ICSE (X)</div>
+                                <div class="timeline-location">
+                                    <span>&nbsp;<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Lokhandwala Foundation School</span>
+                                </div>
+                                <ul id="timeline-tenth" class="timeline-description">
+                                    <li>Learnt basics of Java, C++ and C</li>
+                                    <li>Marks: 94.2%</li>
+                                    <li>Scored 100 out of 100 in Computer Applications</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-circle timeline-item-visible"><div class="timeline-item-circle"></div></div>
+                            <div class="timeline-blank timeline-item-visible"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="page3" class="page">
+                    <div class="main_heading"><span class="centerized_span">Certificates<span class="font_color">.</span></span></div>
+                    <div id="certificate-content">
+                        <div id="intro-title " class="heading"><span class="cool_underline">JS</span> AND UI/UX</div>
+                        <div class="certificate-section">
+                            <div class="certificate-main">
+                                <div class="certificate-img"><a href="Photos/certificate_coursera_restful.jpeg" target="_blank"><img src="Photos/certificate_coursera_restful.jpeg"/></a></div>
+                                <span>RESTful API with HTTP and JavaScript</span>
+                            </div>
+                            <div class="certificate-main">
+                                <div class="certificate-img"><a href="Photos/certificate_coursera_UX_Design_Fundamentals.jpeg" target="_blank"><img src="Photos/certificate_coursera_UX_Design_Fundamentals.jpeg"/></a></div>
+                                <span>UX Design Fundamentals</span>
+                            </div>
+                            <div class="certificate-main">
+                                <div class="certificate-img"><a href="Photos/certificate_coursera_visual_elements_UI.jpeg" target="_blank"><img src="Photos/certificate_coursera_visual_elements_UI.jpeg"/></a></div>
+                                <span>Visual Elements of User Interface Design</span>
+                            </div>
+                        </div>
+                        <div id="intro-title " class="heading"><span class="cool_underline">PH</span>P AND SQL</div>
+                        <div class="certificate-section">
+                            <div class="certificate-main">
+                                <div class="certificate-img"><a href="Photos/certificate_coursera_intro_to_sql.jpeg" target="_blank"><img src="Photos/certificate_coursera_intro_to_sql.jpeg"/></a></div>
+                                <span>Introduction To SQL</span>
+                            </div>
+                            <div class="certificate-main">
+                                <div class="certificate-img"><a href="Photos/certificate_coursera_building_web_applications_php.jpeg" target="_blank"><img src="Photos/certificate_coursera_building_web_applications_php.jpeg"/></a></div>
+                                <span>Building Web Applications in PHP</span>
+                            </div>
+                            <div class="certificate-main">
+                                <div class="certificate-img"><a href="Photos/certificate_coursera_building_db_applications_php.jpeg" target="_blank"><img src="Photos/certificate_coursera_building_db_applications_php.jpeg"/></a></div>
+                                <span>Building Database Applications in PHP</span>
+                            </div>
+                        </div>
+                        <div id="intro-title " class="heading"><span class="cool_underline">DE</span>EP LEARNING</div>
+                        <div class="certificate-section">
+                            <div class="certificate-main">
+                                <div class="certificate-img"><a href="Photos/certificate_coursera_hyperparameter.jpeg" target="_blank"><img src="Photos/certificate_coursera_hyperparameter.jpeg"/></a></div>
+                                <span>Improving Deep Neural Networks</span>
+                            </div>
+                            <div class="certificate-main">
+                                <div class="certificate-img"><a href="Photos/certificate_coursera_nn_and_dl.jpeg" target="_blank"><img src="Photos/certificate_coursera_nn_and_dl.jpeg"/></a></div>
+                                <span>Neural Networks and Deep Learning</span>
+                            </div>
+                            <div class="certificate-main">
+                                <div class="certificate-img"><a href="Photos/certificate_coursera_structuring_ml_projects.jpeg" target="_blank"><img src="Photos/certificate_coursera_structuring_ml_projects.jpeg"/></a></div>
+                                <span>Structuring Machine Learning Projects</span>
+                            </div>
+                        </div>
+                        <div id="intro-title " class="heading"><span class="cool_underline">MI</span>SCELLANEOUS</div>
+                        <div class="certificate-section">
+                            <div class="certificate-main">
+                                <div class="certificate-img"><a href="Photos/certificate_ll_self_confidence.PNG" target="_blank"><img src="Photos/certificate_ll_self_confidence.PNG"/></a></div>
+                                <span>Strategic Thinking</span>
+                            </div>
+                            <div class="certificate-main">
+                                <div class="certificate-img"><a href="Photos/certificate_ll_high_performers.PNG" target="_blank"><img src="Photos/certificate_ll_high_performers.PNG"/></a></div>
+                                <span>The Six Morning Habits of High Performers</span>
+                            </div>
+                            <div class="certificate-main">
+                                <div class="certificate-img"><a href="Photos/certificate_ll_becoming_indistractable.PNG" target="_blank"><img src="Photos/certificate_ll_becoming_indistractable.PNG"/></a></div>
+                                <span>Becoming Indistractable</span>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="certificate-main">
+                            <div class="outer-border">
+                                <div class="inner-border">
+                                    <div class="certificate-content">
+                                        <div class="certificate-content-title"></div>
+                                        <div class="certificate-content-title"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div id="page4" class="page">
+                <div class="main_heading"><span class="centerized_span">Contact Me<span class="font_color">.</span></span></div>
+                <div id="contact-body">
+                    <form id="contact-inputs" onsubmit="return sendEmail(event)">
+                        <!-- <div class="contact-details"><input type="text" class="" id="name" placeholder="NAME" name="name" value="" required=""></div> -->
+                        <div class="contact-details"><input type="text" class="" id="title" placeholder="TITLE" name="title" value="" required=""></div>
+                        <!-- <div class="contact-details"><input type="email" class="" id="email" placeholder="EMAIL" name="email" value="" required=""></div> -->
+                        <div class="contact-details"><textarea id="mailContent" class="" rows="10" placeholder="MESSAGE" name="message" required=""></textarea></div>
+                        <div class="contact-details"><button id="submit" type="submit" value="SEND">
+                            <div class="alt-send-button">
+                              <i class="fa fa-paper-plane" style="font-size: 18px;"></i><span class="send-text"></span>
+                            </div>
+                        </button></div>
+                    </form>
+                    <div id="contact-yourDetails">
+                        <ul id="contact-location_mail">
+                            <li><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bangalore, India</li>
+                            <li><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;senguptatanuj@gmail.com</li>
+                        </ul>
+                        <ul id="contact-socials">
+                            <li><a alt="LinkedIn" href="https://www.linkedin.com/in/tanuj-sengupta-872a05129/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a alt="Github" href="https://github.com/Yuva0" target="_blank"><i class="fab fa-github"></a></i></li>
+                            <li><a alt="Instagram" href="https://www.instagram.com/tanuj.sengupta/" target="_blank"><i class="fab fa-instagram"></a></i></li>
+                            <li><a alt="Facebook" href="https://www.facebook.com/tanuj.sengupta/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="intro-title " class="heading"><span class="cool_underline">Thank you for Visiting!</span></div>
+            </div>
+        </div>
+    </body>
+</html>
+</html>
